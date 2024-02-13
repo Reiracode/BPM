@@ -636,4 +636,3 @@ function CheckSPOData(brandNo, retailNo, poTime, startTime, endTime, checkType) 
   return errLog;
 }
 
-```

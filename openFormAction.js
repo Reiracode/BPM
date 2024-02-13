@@ -5,8 +5,7 @@
 //如何判斷表單狀態1、草稿 2、簽核中 
 //renew
 
-{
-  ALL:
+{ALL:
   #include GlobalFunction;
   loadLibrary("SushiExpressScript.Common");
   loadLibrary("SushiExpressScript.Client_Common");

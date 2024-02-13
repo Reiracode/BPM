@@ -1,0 +1,404 @@
+(201 matches, appear)
+
+
+GetContext()
+
+GetPrjRolMemId(rolId)
+
+GetRetailMemId(retailNo)
+
+GetRetailEmail(retailNo)
+
+GetPrjRolEmail(rolId)
+
+GetDeptMemEmail(detpId, subFlag)
+
+GetVariableValue(variableCode)
+
+GetCalendarDate(dateName)
+
+MathRound(value, digit)
+
+GetFullMonth(month)
+
+SetCell(cell, cellStyle, cellValue)
+
+GetEnvStr()
+
+GetWeekStr(weekDay)
+
+GetAttachedFileNameList(attachFile)
+
+GetFileExt(fileName)
+
+GetConn(dbName)
+
+GetData(sql, dbName)
+
+GetDataWithArgs(sql, args, dbName)
+
+GetDBNewId()
+
+GetSAPConn(sapConnName)
+
+GetInitRFCReturn()
+
+GetRFCReturnList(rfcReturnTable)
+
+RFCDateFormat(data)
+
+CreateDMSDocument(dmsTypeCode, deptName, authorId, serialId, documentName, documentType, description, versionId, docSecurityLevel, artId, insId, attachedFileItemNo, attachedFileNameList, publishFlag)
+
+GetDeptType(dmsTypeCode, detpName)
+
+GetDMCIImpl()
+
+CreateDMSVirtualDocument(dmService, queryService, publishFolderId, authorId, serialId, documentName, attributeTypeId, documentType, description, versionId, docSecurityLevel)
+
+UploadDMSNewPhysicalDocument(dmciImpl, artId, insId, attachedFileItemNo, documentKey, authorId, attachedFileNameList)
+
+CommitDMSPublishDocument(dmService, documentKey, publishFolderId)
+
+GetBrand()
+
+GetRetail()
+
+GetRetailByRetailNo(retailNo)
+
+GetRetailByBrandNo(brandNo)
+
+GetRetailProcedure(brandNo, retailNo)
+
+GetMaterialCategory1()
+
+GetMaterialCategory2(materialCategory1No)
+
+GetMaterialCategory3(materialCategory2No)
+
+GetMaterial(brandNo, materialCategory1No, materialCategory2No, materialCategory3No, materialType2, factoryNo)
+
+GetMaterialUnit(brandNo, materialNo, materialType2, factoryNo)
+
+GetMaterialCost(brandNo, materialNo, unit, factoryNo)
+
+GetDefaultMaterial(brandNo, retailNo, factoryNo)
+
+GetRequiredMaterial(brandNo, factoryNo)
+
+GetNewMaterial(brandNo, factoryNo)
+
+GetOffShelfMaterial(brandNo, factoryNo)
+
+GetMaterialProcedure(brandNo, retailNo, materialNo, materialType2, unitNo, newFlag, defaultType, factoryNo)
+
+GetDefaultMaterialProcedure2(brandNo, factoryNo, retailNo, defaultType, materialNo, materialType2)
+
+UpdateDefaultMaterial(brandNo, retailNo, materialList, creator)
+
+UpdateRequiredMaterial(brandNo, materialList, creator)
+
+UpdateOffShelfMaterial(brandNo, factoryNo, materialList, creator)
+
+UpdateDefaultMaterialProcedure(brandNo, factoryNo, defaultType, retailNo, materialList, creator)
+
+UpdateDeadlineRetailList(brandNo, retailList, creator)
+
+GetDeadLineData(brandNo, retailNo, taskType)
+
+GetRejectReason()
+
+GetJobDetailByJobType(jobType)
+
+GetJobDetailByJobCode(jobCode)
+
+GetJobDetailProcedure(jobType, jobCode)
+
+SaveJobOperationLog(jobId, result, remark, creator)
+
+SaveJobOperationLogAndDetail(jobId, result, remark, detailList, creator)
+
+SaveJobOperationLog_SAP(jobId, result, remark, rfcReturnList, creator)
+
+SaveJobOperationLogAndDetail_SAP(jobId, result, remark, rfcReturnList, detailList, creator)
+
+GetUnit()
+
+GetUnitByUnitNo(unitNo)
+
+GetUnitByBUFlag(buFlag)
+
+GetUnitProcedure(unitNo, buFlag)
+
+GetSalesOrg()
+
+GetSalesOrgBySalesOrgNo(salesOrgNo)
+
+GetSalesOrgByCompanyNo(companyNo)
+
+GetSalesOrgProcedure(companyNo, salesOrgNo)
+
+GetCompany()
+
+GetCompanyByCompanyNo(companyNo)
+
+GetCompanyProcedure(companyNo)
+
+GetCurrency()
+
+GetCurrencyByCurrencyNo(currencyNo)
+
+GetCurrencyProcedure(currencyNo)
+
+GetCountry()
+
+GetCountryByCountryNo(countryNo)
+
+GetCountryProcedure(countryNo)
+
+GetChannel()
+
+GetChannelByChannelNo(channelNo)
+
+GetChannelProcedure(channelNo)
+
+GetConditionType()
+
+GetConditionTypeByAccessCode(purposeCode, appCode, accessCodeFlag, negativeNoFlag)
+
+GetConditionTypeByConditionTypeNo(purposeCode, appCode, accessCodeFlag, negativeNoFlag, conditionTypeNo)
+
+GetConditionTypeProcedure(purposeCode, appCode, accessCodeFlag, negativeNoFlag, conditionTypeNo)
+
+GetPriceListType()
+
+GetPriceListTypeByPriceListTypeNo(priceListTypeNo)
+
+GetPriceListTypeProcedure(priceListTypeNo)
+
+GetCustomer(usableFlag)
+
+GetCustomerByCustomerNo(customerNo, usableFlag)
+
+GetCustomerByBPGRPNo(bpGRPNo, usableFlag)
+
+GetCustomerProcedure(customerNo, deliveryTime, bpGRPNo, usableFlag)
+
+GetIndustry()
+
+GetIndustryByIndustryNo(industryNo)
+
+GetIndustryProcedure(industryNo)
+
+GetMaterialClass()
+
+GetMaterialClassByMaterialClassNo(materialClassNo)
+
+GetMaterialClassProcedure(materialClassNo)
+
+GetMaterialStatus()
+
+GetMaterialStatusByMaterialStatusNo(materialStatusNo)
+
+GetMaterialStatusProcedure(materialStatusNo)
+
+GetMaterialKind()
+
+GetMaterialKindByMaterialKindNo(materialKindNo)
+
+GetMaterialKindProcedure(materialKindNo)
+
+GetCompartment()
+
+GetCompartmentByCompartmentNo(compartmentNo)
+
+GetCompartmentProcedure(compartmentNo)
+
+GetFactory()
+
+GetFactoryByProcurementOrgNo(procurementOrgNo)
+
+GetFactoryBySalesOrgNo(salesOrgNo)
+
+GetFactoryByFactoryNo(factoryNo)
+
+GetFactoryProcedure(procurementOrgNo, salesOrgNo, factoryNo)
+
+GetProfitCenterByCostCtrlNo(costCtrlNo)
+
+GetProfitCenterByProfitCenterNo(profitCenterNo)
+
+GetProfitCenterProcedure(costCtrlNo, profitCenterNo)
+
+GetStorageByFactoryNo(factoryNo)
+
+GetStorageByStorageNo(factoryNo, storageNo)
+
+GetStorageProcedure(factoryNo, storageNo)
+
+GetTaxClassByTaxNo(taxNo)
+
+GetTaxClassByTaxClassNo(taxNo, taxClassNo)
+
+GetTaxClassProcedure(taxNo, taxClassNo)
+
+GetMaterialAccGrp()
+
+GetMaterialAccGrpByMaterialAccGrpNo(materialAccGrpNo)
+
+GetMaterialAccGrpProcedure(materialAccGrpNo)
+
+GetMaterialType1()
+
+GetMaterialType1ByMaterialType1No(materialType1No)
+
+GetMaterialType1Procedure(materialType1No)
+
+GetMaterialType2()
+
+GetMaterialType2ByMaterialType2No(materialType2No)
+
+GetMaterialType2Procedure(materialType2No)
+
+GetAvailability()
+
+GetAvailabilityByAvailabilityNo(availabilityNo)
+
+GetAvailabilityProcedure(availabilityNo)
+
+GetTransportation()
+
+GetTransportationByTransportationNo(transportationNo)
+
+GetTransportationProcedure(transportationNo)
+
+GetLoading()
+
+GetLoadingByLoadingNo(loadingNo)
+
+GetLoadingProcedure(loadingNo)
+
+GetProcurementGrp()
+
+GetProcurementGrpByProcurementGrpNo(procurementGrpNo)
+
+GetProcurementGrpProcedure(procurementGrpNo)
+
+GetProcurementCode()
+
+GetProcurementCodeByProcurementCode(procurementCod)
+
+GetProcurementCodeProcedure(procurementCod)
+
+GetSupplier()
+
+GetSupplierBySupplierNo(supplierNo)
+
+GetSupplierProcedure(supplierNo)
+
+GetProcurementOrgByCompanyNo(companyNo)
+
+GetProcurementOrgByProcurementOrgNo(procurementOrgNo)
+
+GetProcurementOrgProcedure(companyNo, procurementOrgNo)
+
+GetTaxCategoryByTaxCodeNo(taxCodeNo)
+
+GetTaxCategoryByTaxCategoryNo(taxCodeNo, taxCategoryNo)
+
+GetTaxCategoryProcedure(taxCodeNo, taxCategoryNo)
+
+GetMRPType()
+
+GetMRPTypeByMRPTypeNo(mrpTypeNo)
+
+GetMRPTypeProcedure(mrpTypeNo)
+
+GetMRPControllerByFactoryNo(factoryNo)
+
+GetMRPControllerByMRPControllerNo(factoryNo, mrpControllerNo)
+
+GetMRPControllerProcedure(factoryNo, mrpControllerNo)
+
+GetSPProcurementByFactoryNo(factoryNo)
+
+GetSPProcurementBySPProcurementNo(factoryNo, spProcurementNo)
+
+GetSPProcurementProcedure(factoryNo, spProcurementNo)
+
+GetSMaterial(usableFlag)
+
+GetSMaterialByMaterialCategory3No(materialCategory3No, usableFlag)
+
+GetSMaterialByMaterialClassNo(materialClassNo, usableFlag)
+
+GetSMaterialByMaterialNo(materialNo, usableFlag)
+
+GetSMaterialProcedure(materialNo, materialCategory3No, materialStatusNo, materialClassNo, usableFlag)
+
+GetSMaterialFactoryByMaterialNo(materialNo)
+
+GetSMaterialFactoryByFactoryNo(materialNo, factoryNo)
+
+GetSMaterialFactoryProcedure(materialNo, factoryNo, loadingNo, availabilityNo)
+
+GetMaterialStorageByMaterialNo(materialNo)
+
+GetMaterialStorageByFactoryNo(materialNo, factoryNo)
+
+GetMaterialStorageByStorageNo(materialNo, factoryNo, storageNo)
+
+GetMaterialStorageProcedure(materialNo, factoryNo, storageNo)
+
+GetMaterialSalesOrgByMaterialNo(materialNo)
+
+GetMaterialSalesOrgBySalesOrgNo(materialNo, salesOrgNo, channelNo)
+
+GetMaterialSalesOrgProcedure(materialNo, salesOrgNo, channelNo)
+
+GetMaterialUnitByMaterialNo(materialNo)
+
+GetMaterialUnitByUnitNo(materialNo, unitNo_A)
+
+GetMaterialUnitProcedure(materialNo, unitNo_A)
+
+GetMaterialPriceByMaterialNo(conditionTypeNo, salesOrgNo, channelNo, priceListTypeNo, customerNo, materialNo, startDate)
+
+GetMaterialPriceProcedure(conditionTypeNo, salesOrgNo, channelNo, priceListTypeNo, customerNo, materialNo, startDate)
+
+GetCustomerSalesOrgByCustomerNo(customerNo, usableFlag)
+
+GetCustomerSalesOrgBySalesOrgNo(customerNo, salesOrgNo, channelNo, departmentNo, usableFlag)
+
+GetCustomerSalesOrgProcedure(customerNo, salesOrgNo, channelNo, departmentNo, usableFlag)
+
+GetSalesOffice()
+
+GetSalesOfficeBySalesOfficeNo(salesOfficeNo)
+
+GetSalesOfficeProcedure(salesOfficeNo)
+
+GetSalesOrgOfficeBySalesOrgNo(salesOrgNo, channelNo, departmentNo)
+
+GetSalesOrgOfficeProcedure(salesOrgNo, channelNo, departmentNo)
+
+GetBPAddressByBPNo(bpNo)
+
+GetBPAddressProcedure(bpNo)
+
+GetDeliveryNote(retailNo, deliveryDateFrom, deliveryDateTo, deliveryType)
+
+GetDeliveryNoteById(idList)
+
+GetDeliveryNoteProcedure(idList, retailNo, deliveryDateFrom, deliveryDateTo, deliveryType)
+
+GetRetailRevenue(retailNo, operationYear, operationMonth)
+
+CheckRetailRevenueAndCreate(retailNo, operationYear, operationMonth, creator)
+
+UpdateRetailRevenue(revenueList, updateFlag, editor)
+
+GetEmployee()
+
+GetEmployeeByEmployeeNo(employeeNo)
+
+GetEmployeeProcedure(employeeNo)

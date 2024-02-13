@@ -1,0 +1,46 @@
+(22 matches, appear)
+
+
+OpenForm(artId, width, height)
+
+OpenFormWithArgs(artId, width, height, args)
+
+MakeArg(key, value)
+
+GetDepartmentNo()
+
+GetChargeRetail()
+
+SetChargeRetail(tblChargeRetail)
+
+GetChargeBrand(tblChargeRetail)
+
+SetChargeBrand(tblChargeRetail, ddlBrand)
+
+GetChargeRetailByBrandNo(tblChargeRetail, brandNo)
+
+SetChargeRetailByBrandNo(tblChargeRetail, brandNo, ddlRetail, defaultType)
+
+SetInitChargeRetail(tblChargeRetail, ddlBrand, ddlRetail, defaultType)
+
+SetFontColor(str, fontColor)
+
+GetPeriodDate(forwardDays, periodDays, sort)
+
+SetPeriodDate(forwardDays, periodDays, sort, ddlDate)
+
+GetPeriodWeek(forwardWeeks, periodWeeks, sort)
+
+SetPeriodWeek(forwardWeeks, periodWeeks, sort, ddlWeek)
+
+CheckTableDuplicate(table, fieldList, valueList, excludeRowIndex)
+
+GetHiddenTableValue(table, keyField, key, valueField)
+
+ClearTableEmptyRow(table, checkField)
+
+ExportToExcel(reportName, tblName, columnName, columnType, columnWidth, downloadFlag)
+
+GetSPOTime(checkTimes, deliveryDate)
+
+CheckSPOData(brandNo, retailNo, poTime, startTime, endTime, checkType)

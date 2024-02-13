@@ -1,6 +1,5 @@
 // Some code
-{
-  ALL:
+{ALL:
   var formNo = Form.getArtInstance().getMyID();
   var formName = Form.getArtInstance().getName();
 

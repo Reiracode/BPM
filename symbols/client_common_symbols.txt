@@ -1,0 +1,125 @@
+function OpenForm
+function OpenFormWithArgs
+	variable artIns
+	variable i
+function MakeArg
+	variable obj
+function GetDepartmentNo
+	variable deptId
+	variable deptNo
+	variable member
+function GetChargeRetail
+	variable args
+	variable dr
+	variable dtRetailList
+	variable ex
+	variable i
+	variable memberId
+	variable retail
+	variable retailList
+	variable sql
+function SetChargeRetail
+	variable i
+	variable retail
+	variable retailList
+	variable rowIndex
+	variable table
+function GetChargeBrand
+	variable brand
+	variable brandList
+	variable brandNo
+	variable i
+	variable table
+function SetChargeBrand
+	variable brandList
+	variable dropDownList
+	variable i
+function GetChargeRetailByBrandNo
+	variable i
+	variable retail
+	variable retailList
+	variable table
+function SetChargeRetailByBrandNo
+	variable dropDownList
+	variable i
+	variable retailList
+function SetInitChargeRetail
+	variable errLog
+function SetFontColor
+function GetPeriodDate
+	variable end
+	variable i
+	variable index
+	variable myDate
+	variable newDate
+	variable nowDate
+	variable periodDate
+	variable start
+	variable weight
+function SetPeriodDate
+	variable dateList
+	variable dropDownList
+	variable i
+function GetPeriodWeek
+	variable end
+	variable i
+	variable index
+	variable myDate
+	variable newDate
+	variable nowDate
+	variable periodWeek
+	variable start
+	variable thursdayDate
+	variable weekDay
+	variable weight
+function SetPeriodWeek
+	variable dropDownList
+	variable endDate
+	variable i
+	variable myDate
+	variable startDate
+	variable weekList
+function CheckTableDuplicate
+	variable duplicateFlag
+	variable i
+	variable j
+	variable result
+function GetHiddenTableValue
+	variable i
+	variable value
+function ClearTableEmptyRow
+	variable i
+function ExportToExcel
+	variable borderStyle
+	variable cellStyle
+	variable cellStyle
+	variable cellStyle_D
+	variable cellStyle_I
+	variable cellStyle_L
+	variable cellStyle_P
+	variable cellStyle_R
+	variable cellValue
+	variable file
+	variable fileFolder
+	variable fileName
+	variable fillPatternType
+	variable horizontalAlignment
+	variable i
+	variable i
+	variable j
+	variable nowTime
+	variable row
+	variable row
+	variable rowIndex
+	variable sheet
+	variable tbl
+	variable verticalAlignment
+	variable workbook
+function GetSPOTime
+	variable i
+	variable myDate
+	variable nowDate
+	variable nowTime
+	variable result
+function CheckSPOData
+	variable errLog

@@ -7,8 +7,7 @@ Q 草稿判斷  1、還沒送出 task id 是空的？∵沒送出沒關卡？
 表單結案後，是否要開放所有欄位資料給所有關卡看
 */
 
-{
-  ALL:
+{ALL:
   var formNo = Form.getArtInstance().getMyID();
   var formName = Form.getArtInstance().getName();
   Client.addInfoLog("[" + formName + "] openFormUIAction START: " + formNo);

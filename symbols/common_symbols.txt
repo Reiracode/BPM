@@ -1,0 +1,900 @@
+function GetContext
+function GetPrjRolMemId
+	variable args
+	variable context
+	variable dtMemId
+	variable ex
+	variable i
+	variable memIdList
+	variable sql
+function GetRetailMemId
+	variable context
+	variable dtMemId
+	variable ex
+	variable i
+	variable i
+	variable memIdList
+	variable sql
+	variable sql_Where_DepId
+function GetRetailEmail
+	variable context
+	variable dtEmail
+	variable email
+	variable ex
+	variable i
+	variable i
+	variable sql
+	variable sql_Where_DepId
+function GetPrjRolEmail
+	variable context
+	variable email
+	variable i
+	variable member
+	variable memIdList
+function GetDeptMemEmail
+	variable context
+	variable email
+	variable i
+	variable member
+	variable memIdList
+function GetVariableValue
+	variable args
+	variable context
+	variable dtVariable
+	variable ex
+	variable sql
+	variable variableValue
+function GetCalendarDate
+	variable args
+	variable context
+	variable date
+	variable dtIncludeDays
+	variable ex
+	variable sql
+function MathRound
+	variable context
+	variable ex
+	variable mathValue
+	variable tValue
+function GetFullMonth
+	variable fullMonth
+function SetCell
+function GetCellStyle
+	variable cellStyle
+	variable font
+function GetEnvStr
+	variable envStr
+	variable productionFlag
+function GetWeekStr
+	variable weekStr
+function GetAttachedFileNameList
+	variable attachedFileNameList
+	variable fileInfo
+	variable fileList
+	variable i
+function GetFileExt
+	variable fileExt
+	variable index
+function GetConn
+	variable conn
+	variable context
+	variable ex
+function GetData
+	variable conn
+	variable context
+	variable data
+	variable ex
+function GetDataWithArgs
+	variable conn
+	variable context
+	variable data
+	variable data
+	variable ex
+function GetDBNewId
+	variable dt
+	variable id
+	variable sql
+function GetSAPConn
+	variable context
+	variable ex
+	variable sapConn
+	variable url
+function GetInitRFCReturn
+	variable rfcReturn
+function GetRFCReturnList
+	variable rfcReturnList
+function RFCDateFormat
+function CreateDMSDocument
+	variable attributeTypeId
+	variable deptType
+	variable dmciImpl
+	variable dmService
+	variable documentKey
+	variable errLog
+	variable publishFolderId
+	variable queryService
+function GetDeptType
+	variable args
+	variable deptType
+	variable dmsParentTypeId
+	variable dr
+	variable dtDeptType
+	variable sql
+function GetDMCIImpl
+	variable dmciImpl
+	variable dmsHost
+	variable dmsPort
+function CreateDMSVirtualDocument
+	variable documentKey
+	variable virtualDocument
+	variable virtualDocumentInfo
+function UploadDMSNewPhysicalDocument
+	variable fileExt
+	variable fileInputStream
+	variable fileName
+	variable fileObject
+	variable filePath
+	variable fileUploadPath
+	variable i
+	variable physicalDocumentTransferTool
+function CommitDMSPublishDocument
+	variable result
+function GetBrand
+	variable brand
+	variable brandList
+	variable dr
+	variable dtBrand
+	variable i
+	variable sql
+function GetRetail
+function GetRetailByRetailNo
+	variable retail
+	variable retailList
+function GetRetailByBrandNo
+function GetRetailProcedure
+	variable args
+	variable dr
+	variable dtRetail
+	variable i
+	variable retail
+	variable retailList
+	variable sql
+function GetMaterialCategory1
+	variable dr
+	variable dtMaterialCategory1
+	variable i
+	variable materialCategory1
+	variable materialCategory1List
+	variable sql
+function GetMaterialCategory2
+	variable args
+	variable dr
+	variable dtMaterialCategory2
+	variable i
+	variable materialCategory2
+	variable materialCategory2List
+	variable sql
+function GetMaterialCategory3
+	variable args
+	variable dr
+	variable dtMaterialCategory3
+	variable i
+	variable materialCategory3
+	variable materialCategory3List
+	variable sql
+function GetMaterial
+	variable args
+	variable dr
+	variable dtMaterial
+	variable i
+	variable material
+	variable materialList
+	variable sql
+function GetMaterialUnit
+function GetMaterialCost
+	variable materialCost
+	variable materialCostList
+function GetDefaultMaterial
+function GetRequiredMaterial
+function GetNewMaterial
+function GetOffShelfMaterial
+function GetMaterialProcedure
+	variable args
+	variable dr
+	variable dtMaterialCost
+	variable i
+	variable materialCost
+	variable materialCostList
+	variable newMaterialDay
+	variable sql
+	variable sql_Where
+function GetDefaultMaterialProcedure2
+	variable args
+	variable dr
+	variable dtMaterial
+	variable i
+	variable material
+	variable materialList
+	variable sql
+	variable sql_Where
+function UpdateDefaultMaterial
+function UpdateRequiredMaterial
+function UpdateOffShelfMaterial
+function UpdateDefaultMaterialProcedure
+	variable conn
+	variable context
+	variable ex
+	variable i
+	variable material
+	variable materialNo
+	variable remark
+	variable result
+	variable sortNo
+	variable sql
+	variable startDate
+	variable unitName
+	variable unitNo
+function UpdateDeadlineRetailList
+	variable conn
+	variable context
+	variable deliveryTime
+	variable endTimeHour
+	variable endTimeMinute
+	variable ex
+	variable i
+	variable result
+	variable retail
+	variable retailName
+	variable retailNo
+	variable sql
+	variable taskType
+	variable taskTypeName
+function GetDeadLineData
+	variable args
+	variable deadlineData
+	variable dr
+	variable dtGetDealline
+	variable endTime
+	variable i
+	variable retailDeadlineList
+	variable sql
+function GetRejectReason
+	variable dr
+	variable dtRejectReason
+	variable i
+	variable rejectReason
+	variable rejectReasonList
+	variable sql
+function GetJobDetailByJobType
+function GetJobDetailByJobCode
+	variable jobDetail
+	variable jobDetailList
+function GetJobDetailProcedure
+	variable args
+	variable dr
+	variable dtJobDetail
+	variable i
+	variable jobDetail
+	variable jobDetailList
+	variable sql
+	variable sql_Where
+function SaveJobOperationLog
+function SaveJobOperationLogAndDetail
+function SaveJobOperationLog_SAP
+function SaveJobOperationLogAndDetail_SAP
+	variable conn
+	variable context
+	variable detail
+	variable detail1
+	variable detail10
+	variable detail11
+	variable detail12
+	variable detail13
+	variable detail14
+	variable detail15
+	variable detail16
+	variable detail17
+	variable detail18
+	variable detail19
+	variable detail2
+	variable detail20
+	variable detail3
+	variable detail4
+	variable detail5
+	variable detail6
+	variable detail7
+	variable detail8
+	variable detail9
+	variable ex
+	variable i
+	variable i
+	variable id
+	variable result1
+	variable rfcReturn
+	variable sapLogOn
+	variable sapMessage
+	variable sapNumber
+	variable sapType
+	variable sql
+function GetUnit
+function GetUnitByUnitNo
+	variable unit
+	variable unitList
+function GetUnitByBUFlag
+function GetUnitProcedure
+	variable args
+	variable dr
+	variable dtUnit
+	variable i
+	variable sql
+	variable unit
+	variable unitList
+function GetSalesOrg
+function GetSalesOrgBySalesOrgNo
+	variable salesOrg
+	variable salesOrgList
+function GetSalesOrgByCompanyNo
+	variable salesOrgList
+function GetSalesOrgProcedure
+	variable args
+	variable dr
+	variable dtSalesOrg
+	variable i
+	variable salesOrg
+	variable salesOrgList
+	variable sql
+function GetCompany
+function GetCompanyByCompanyNo
+	variable company
+	variable companyList
+function GetCompanyProcedure
+	variable args
+	variable company
+	variable companyList
+	variable dr
+	variable dtCompany
+	variable i
+	variable sql
+function GetCurrency
+function GetCurrencyByCurrencyNo
+	variable currency
+	variable currencyList
+function GetCurrencyProcedure
+	variable args
+	variable currency
+	variable currencyList
+	variable dr
+	variable dtCurrency
+	variable i
+	variable sql
+function GetCountry
+function GetCountryByCountryNo
+	variable country
+	variable countryList
+function GetCountryProcedure
+	variable args
+	variable country
+	variable countryList
+	variable dr
+	variable dtCountry
+	variable i
+	variable sql
+function GetChannel
+function GetChannelByChannelNo
+	variable channel
+	variable channelList
+function GetChannelProcedure
+	variable args
+	variable channel
+	variable channelList
+	variable dr
+	variable dtChannel
+	variable i
+	variable sql
+function GetConditionType
+function GetConditionTypeByAccessCode
+function GetConditionTypeByConditionTypeNo
+	variable conditionType
+	variable conditionTypeList
+function GetConditionTypeProcedure
+	variable args
+	variable conditionType
+	variable conditionTypeList
+	variable dr
+	variable dtConditionType
+	variable i
+	variable sql
+function GetPriceListType
+function GetPriceListTypeByPriceListTypeNo
+	variable priceListType
+	variable priceListTypeList
+function GetPriceListTypeProcedure
+	variable args
+	variable dr
+	variable dtPriceListType
+	variable i
+	variable priceListType
+	variable priceListTypeList
+	variable sql
+function GetCustomer
+function GetCustomerByCustomerNo
+	variable customer
+	variable customerList
+function GetCustomerByBPGRPNo
+	variable customerList
+function GetCustomerProcedure
+	variable args
+	variable customer
+	variable customerList
+	variable dr
+	variable dtCustomer
+	variable i
+	variable sql
+function GetIndustry
+function GetIndustryByIndustryNo
+	variable industry
+	variable industryList
+function GetIndustryProcedure
+	variable args
+	variable dr
+	variable dtIndustry
+	variable i
+	variable industry
+	variable industryList
+	variable sql
+function GetMaterialClass
+function GetMaterialClassByMaterialClassNo
+	variable materialClass
+	variable materialClassList
+function GetMaterialClassProcedure
+	variable args
+	variable dr
+	variable dtMaterialClass
+	variable i
+	variable materialClass
+	variable materialClassList
+	variable sql
+function GetMaterialStatus
+function GetMaterialStatusByMaterialStatusNo
+	variable materialStatus
+	variable materialStatusList
+function GetMaterialStatusProcedure
+	variable args
+	variable dr
+	variable dtMaterialStatus
+	variable i
+	variable materialStatus
+	variable materialStatusList
+	variable sql
+function GetMaterialKind
+function GetMaterialKindByMaterialKindNo
+	variable materialKind
+	variable materialKindList
+function GetMaterialKindProcedure
+	variable args
+	variable dr
+	variable dtMaterialKind
+	variable i
+	variable materialKind
+	variable materialKindList
+	variable sql
+function GetCompartment
+function GetCompartmentByCompartmentNo
+	variable compartment
+	variable compartmentList
+function GetCompartmentProcedure
+	variable args
+	variable compartment
+	variable compartmentList
+	variable dr
+	variable dtCompartment
+	variable i
+	variable sql
+function GetFactory
+function GetFactoryByProcurementOrgNo
+	variable factoryList
+function GetFactoryBySalesOrgNo
+	variable factoryList
+function GetFactoryByFactoryNo
+	variable factory
+	variable factoryList
+function GetFactoryProcedure
+	variable args
+	variable dr
+	variable dtFactory
+	variable factory
+	variable factoryList
+	variable i
+	variable sql
+function GetProfitCenterByCostCtrlNo
+	variable profitCenterList
+function GetProfitCenterByProfitCenterNo
+	variable profitCenter
+	variable profitCenterList
+function GetProfitCenterProcedure
+	variable args
+	variable dr
+	variable dtProfitCenter
+	variable i
+	variable profitCenter
+	variable profitCenterList
+	variable sql
+function GetStorageByFactoryNo
+	variable storageList
+function GetStorageByStorageNo
+	variable storage
+	variable storageList
+function GetStorageProcedure
+	variable args
+	variable dr
+	variable dtStorage
+	variable i
+	variable sql
+	variable storage
+	variable storageList
+function GetTaxClassByTaxNo
+	variable taxClassList
+function GetTaxClassByTaxClassNo
+	variable taxClass
+	variable taxClassList
+function GetTaxClassProcedure
+	variable args
+	variable dr
+	variable dtTaxClass
+	variable i
+	variable sql
+	variable taxClass
+	variable taxClassList
+function GetMaterialAccGrp
+function GetMaterialAccGrpByMaterialAccGrpNo
+	variable materialAccGrp
+	variable materialAccGrpList
+function GetMaterialAccGrpProcedure
+	variable args
+	variable dr
+	variable dtMaterialAccGrp
+	variable i
+	variable materialAccGrp
+	variable materialAccGrpList
+	variable sql
+function GetMaterialType1
+function GetMaterialType1ByMaterialType1No
+	variable materialType1
+	variable materialType1List
+function GetMaterialType1Procedure
+	variable args
+	variable dr
+	variable dtMaterialType1
+	variable i
+	variable materialType1
+	variable materialType1List
+	variable sql
+function GetMaterialType2
+function GetMaterialType2ByMaterialType2No
+	variable materialType2
+	variable materialType2List
+function GetMaterialType2Procedure
+	variable args
+	variable dr
+	variable dtMaterialType2
+	variable i
+	variable materialType2
+	variable materialType2List
+	variable sql
+function GetAvailability
+function GetAvailabilityByAvailabilityNo
+	variable availability
+	variable availabilityList
+function GetAvailabilityProcedure
+	variable args
+	variable availability
+	variable availabilityList
+	variable dr
+	variable dtAvailability
+	variable i
+	variable sql
+function GetTransportation
+function GetTransportationByTransportationNo
+	variable transportation
+	variable transportationList
+function GetTransportationProcedure
+	variable args
+	variable dr
+	variable dtTransportation
+	variable i
+	variable sql
+	variable transportation
+	variable transportationList
+function GetLoading
+function GetLoadingByLoadingNo
+	variable loading
+	variable loadingList
+function GetLoadingProcedure
+	variable args
+	variable dr
+	variable dtLoading
+	variable i
+	variable loading
+	variable loadingList
+	variable sql
+function GetProcurementGrp
+function GetProcurementGrpByProcurementGrpNo
+	variable procurementGrp
+	variable procurementGrpList
+function GetProcurementGrpProcedure
+	variable args
+	variable dr
+	variable dtProcurementGrp
+	variable i
+	variable procurementGrp
+	variable procurementGrpList
+	variable sql
+function GetProcurementCode
+function GetProcurementCodeByProcurementCode
+	variable procurementCode
+	variable procurementCodeList
+function GetProcurementCodeProcedure
+	variable args
+	variable dr
+	variable dtProcurementCode
+	variable i
+	variable procurementCode
+	variable procurementCodeList
+	variable sql
+function GetSupplier
+function GetSupplierBySupplierNo
+	variable supplier
+	variable supplierList
+function GetSupplierProcedure
+	variable args
+	variable dr
+	variable dtSupplier
+	variable i
+	variable sql
+	variable supplier
+	variable supplierList
+function GetProcurementOrgByCompanyNo
+	variable procurementOrgList
+function GetProcurementOrgByProcurementOrgNo
+	variable procurementOrg
+	variable procurementOrgList
+function GetProcurementOrgProcedure
+	variable args
+	variable dr
+	variable dtProcurementOrg
+	variable i
+	variable procurementOrg
+	variable procurementOrgList
+	variable sql
+function GetTaxCategoryByTaxCodeNo
+	variable taxCategoryList
+function GetTaxCategoryByTaxCategoryNo
+	variable taxCategory
+	variable taxCategoryList
+function GetTaxCategoryProcedure
+	variable args
+	variable dr
+	variable dtTaxCategory
+	variable i
+	variable sql
+	variable taxCategory
+	variable taxCategoryList
+function GetMRPType
+function GetMRPTypeByMRPTypeNo
+	variable mrpType
+	variable mrpTypeList
+function GetMRPTypeProcedure
+	variable args
+	variable dr
+	variable dtMRPType
+	variable i
+	variable mrpType
+	variable mrpTypeList
+	variable sql
+function GetMRPControllerByFactoryNo
+	variable mrpControllerList
+function GetMRPControllerByMRPControllerNo
+	variable mrpController
+	variable mrpControllerList
+function GetMRPControllerProcedure
+	variable args
+	variable dr
+	variable dtMRPController
+	variable i
+	variable mrpController
+	variable mrpControllerList
+	variable sql
+function GetSPProcurementByFactoryNo
+	variable spProcurementList
+function GetSPProcurementBySPProcurementNo
+	variable spProcurement
+	variable spProcurementList
+function GetSPProcurementProcedure
+	variable args
+	variable dr
+	variable dtSPProcurement
+	variable i
+	variable spProcurement
+	variable spProcurementList
+	variable sql
+function GetSMaterial
+function GetSMaterialByMaterialCategory3No
+	variable materialList
+function GetSMaterialByMaterialClassNo
+	variable materialList
+function GetSMaterialByMaterialNo
+	variable material
+	variable materialList
+function GetSMaterialProcedure
+	variable args
+	variable dr
+	variable dtMaterial
+	variable i
+	variable material
+	variable materialList
+	variable sql
+function GetSMaterialFactoryByMaterialNo
+	variable materialFactoryList
+function GetSMaterialFactoryByFactoryNo
+	variable materialFactory
+	variable materialFactoryList
+function GetSMaterialFactoryProcedure
+	variable args
+	variable dr
+	variable dtMaterialFactory
+	variable i
+	variable materialFactory
+	variable materialFactoryList
+	variable sql
+function GetMaterialStorageByMaterialNo
+	variable materialStorageList
+function GetMaterialStorageByFactoryNo
+	variable materialStorageList
+function GetMaterialStorageByStorageNo
+	variable materialStorage
+	variable materialStorageList
+function GetMaterialStorageProcedure
+	variable args
+	variable dr
+	variable dtMaterialStorage
+	variable i
+	variable materialStorage
+	variable materialStorageList
+	variable sql
+function GetMaterialSalesOrgByMaterialNo
+	variable materialSalesOrgList
+function GetMaterialSalesOrgBySalesOrgNo
+	variable materialSalesOrg
+	variable materialSalesOrgList
+function GetMaterialSalesOrgProcedure
+	variable args
+	variable dr
+	variable dtMaterialSalesOrg
+	variable i
+	variable materialSalesOrg
+	variable materialSalesOrgList
+	variable sql
+function GetMaterialUnitByMaterialNo
+	variable materialUnitList
+function GetMaterialUnitByUnitNo
+	variable materialUnit
+	variable materialUnitList
+function GetMaterialUnitProcedure
+	variable args
+	variable dr
+	variable dtMaterialUnit
+	variable i
+	variable materialUnit
+	variable materialUnitList
+	variable sql
+function GetMaterialPriceByMaterialNo
+	variable materialPriceList
+function GetMaterialPriceProcedure
+	variable args
+	variable dr
+	variable dtMaterialPrice
+	variable i
+	variable materialPrice
+	variable materialPriceList
+	variable sql
+function GetCustomerSalesOrgByCustomerNo
+	variable customerSalesOrgList
+function GetCustomerSalesOrgBySalesOrgNo
+	variable customerSalesOrg
+	variable customerSalesOrgList
+function GetCustomerSalesOrgProcedure
+	variable args
+	variable customerSalesOrg
+	variable customerSalesOrgList
+	variable dr
+	variable dtCustomerSalesOrg
+	variable i
+	variable sql
+function GetSalesOffice
+function GetSalesOfficeBySalesOfficeNo
+	variable salesOffice
+	variable salesOfficeList
+function GetSalesOfficeProcedure
+	variable args
+	variable dr
+	variable dtSalesOffice
+	variable i
+	variable salesOffice
+	variable salesOfficeList
+	variable sql
+function GetSalesOrgOfficeBySalesOrgNo
+	variable salesOrgOfficeList
+function GetSalesOrgOfficeProcedure
+	variable args
+	variable dr
+	variable dtSalesOrgOffice
+	variable i
+	variable salesOrgOffice
+	variable salesOrgOfficeList
+	variable sql
+function GetBPAddressByBPNo
+	variable bpAddressList
+function GetBPAddressProcedure
+	variable args
+	variable bpAddress
+	variable bpAddressList
+	variable dr
+	variable dtBPAddress
+	variable i
+	variable sql
+function GetDeliveryNote
+function GetDeliveryNoteById
+function GetDeliveryNoteProcedure
+	variable args
+	variable deliveryNote
+	variable deliveryNoteList
+	variable dr
+	variable dtDeliveryNote
+	variable i
+	variable i
+	variable sql
+	variable sql_Where_DeliveryDate
+	variable sql_Where_DeliveryType
+	variable sql_Where_Id
+	variable sql_Where_RetailNo
+function GetRetailRevenue
+	variable args
+	variable dr
+	variable dtRetailRevenue
+	variable i
+	variable retailRevenue
+	variable retailRevenueList
+	variable sql
+function CheckRetailRevenueAndCreate
+	variable conn
+	variable context
+	variable days
+	variable endDate
+	variable ex
+	variable i
+	variable myDate
+	variable newDate
+	variable operationDate
+	variable result
+	variable retailRevenueList
+	variable sql
+function UpdateRetailRevenue
+	variable conn
+	variable context
+	variable ex
+	variable i
+	variable result
+	variable revenue
+	variable sql
+function GetEmployee
+function GetEmployeeByEmployeeNo
+	variable employee
+	variable employeeList
+function GetEmployeeProcedure
+	variable args
+	variable dr
+	variable dtEmployee
+	variable employee
+	variable employeeList
+	variable i
+	variable sql
