@@ -1,4 +1,3 @@
-// Some co
 //GlobalFunction，並依實際欄位數量對各欄位進行處理dx
 //設置表單各區域隱藏屬性
 //申請人資訊、主旨、用途說明為共通欄位，不設置隱藏
@@ -141,6 +140,8 @@ function getBrandMangerMailList() {
   } else if (brandno == "1012") {
     depInfo.push("DEP23571613973818781");
   } else if (brandno == "1022") {
+    depInfo.push("DEP40021636451898001");
+  } else if (brandno == "1019") {
     depInfo.push("DEP23581613973987110");
   }
 
@@ -152,6 +153,8 @@ function getBrandMangerMailList() {
     //string  += depInfo[i];
     //部門名稱
     var dep = Client.getDepartment(depInfo[i]);
+    string += (dep + ";");
+
     var managerID = dep.getManagerID();
     var rol = Client.getRole(managerID);//取得職務
     if (rol == null) {
@@ -302,8 +305,10 @@ function getBrandEmployee() {
   Form.setValue("formNO", formID);
 
   var brandID = Form.getValue("hdfbrandDepID");
+
   //sushi  = 迴轉，只設迴轉，sushi吃同樣的設定
-  if (brandID == "DEP20021626325280636") {
+  if ("DEP20021626325280636".equals(brandID)) {
+    // if (brandID == "DEP20021626325280636") {
     brandID = "DEP20351612424254515";
   }
 
@@ -331,17 +336,22 @@ function getBrandEmployee() {
 
 
 
-//申請人 初始化/被退回 選稽核類型>>連動panel
+
+
+//申請人 選稽核類型>>連動panel
 function setFormVisible() {
   Form.getComponent("pnlHygieneaud").setVisible(false);	//抽驗
-  Form.getComponent("pnlAddlDocs").setVisible(false);  	//補件資料
-  Form.getComponent("pnlDeprivation").setVisible(false);	//缺失照片
   Form.getComponent("pnlFireEng").setVisible(false);	    //消防工程
-  Form.getComponent("pnlAudreport2a").setVisible(false);  //稽核項目 HR關卡才要顯示
-  Form.getComponent("pnlCloseInfo").setVisible(false);  //結案說明-結案關卡才顯示
+  Form.getComponent("pnlDeprivation").setVisible(false);	//缺失照片
+  Form.getComponent("pnlAddlDocs").setVisible(false);  	//補件資料
   Form.getComponent("pnlAttachment1").setVisible(false);  //有稽核單 才顯示 - 稽核單附件
 
-  //根據稽核類型顯示不同的區塊
+  Form.getComponent("pnlAudreport2a").setVisible(false);  //稽核項目 HR關卡才要顯示
+  Form.getComponent("pnlCloseInfo").setVisible(false);  //結案說明-結案關卡才顯示
+
+
+
+  //稽核類型
   var ddlAudClass = Form.getValue("ddlAudClass");
 
   //回歸預設項目
@@ -351,25 +361,38 @@ function setFormVisible() {
     Form.getComponent("pnlHygieneaud").setVisible(false);
     Form.getComponent("pnlDeprivation").setVisible(true);
     Form.getComponent("pnlAddlDocs").setVisible(true)
-
   } else if ("消防".equals(ddlAudClass)) {
     Form.getComponent("pnlFireEng").setVisible(true);
     Form.getComponent("pnlDeprivation").setVisible(true);
 
+  } else if ("其他".equals(ddlAudClass)) {
+    Form.getComponent("pnlDeprivation").setVisible(true);
+  } else {
+  }
+
+}
+
+
+//根據稽核類型顯示不同的區塊
+function setAudClassLayout() {
+  //稽核類型
+  var ddlAudClass = Form.getValue("ddlAudClass");
+
+  if ("衛生環保".equals(ddlAudClass)) {
+    Form.getComponent("pnlHygieneaud").setVisible(false);
+    Form.getComponent("pnlDeprivation").setVisible(true);
+    Form.getComponent("pnlAddlDocs").setVisible(true)
+  } else if ("消防".equals(ddlAudClass)) {
+    Form.getComponent("pnlFireEng").setVisible(true);
+    Form.getComponent("pnlDeprivation").setVisible(true);
   } else if ("勞檢".equals(ddlAudClass)) {
     Form.getComponent("pnlAudreport2a").setVisible(true);
-    //Form.getComponent("pnlDeprivation").setVisible(true);
 
   } else if ("其他".equals(ddlAudClass)) {
     Form.getComponent("pnlDeprivation").setVisible(true);
-  } 
+  }
 
 }
-//P
-//根據稽核類型顯示不同的區塊
-
-
-
 
 
 
@@ -599,7 +622,7 @@ function checkRequireDate() {
 }
 
 
-//設定選項預設資料
+
 function setAddDocsAllDefault() {
   //切換稽核類型 清空資料
   //是否有稽核單
@@ -677,7 +700,6 @@ function CheckData_Common() {
     Form.addDataInvalidMsg("請選擇門市");
   }
 
-  
 
   //稽核類型：其他時， 說明必填 txtAudDep txtAudReson
   var ddlAudClass = Form.getValue("ddlAudClass");
@@ -876,6 +898,8 @@ function SetTestRetailByNo(tblChargeRetail, brandNo, ddlRetail, defaultType) {
         var brandID = getBrandID(brandNo); //品牌no
         Form.setValue("hdfbrandDepID", brandID.DepID);
 
+
+
         //0214多品牌 多門市只有SHIHSUI 1
         SetBoStaff();
         getOrgTree();
@@ -1001,8 +1025,8 @@ function setProcessApprove() {
   Form.getComponent("txtAddlDocsGInfo").setEnabled(false);
 
   //結案及hr人員才能填
-  //Form.getComponent("ddlAudItem").setEnabled(false) ;
-  //Form.getComponent("txtClosureInfo").setEnabled(false) ;
+  Form.getComponent("ddlAudItem").setEnabled(false);
+  Form.getComponent("txtClosureInfo").setEnabled(false);
 
   Form.getComponent("rdoAddlDocsAy").setEnabled(false);
   Form.getComponent("rdoAddlDocsBy").setEnabled(false);
@@ -1024,20 +1048,23 @@ function setProcessApprove() {
 
 
 
-
-
-
 //結案關卡：說明+實際改善日期
 function setProcessClose() {
   Form.getComponent("txtActualDate").setEnabled(true);
   Form.getComponent("pnlCloseInfo").setVisible(true);
+  Form.getComponent("txtClosureInfo").setEnabled(true);
 }
 
 
 //HR經理關卡：稽核類型
 function setProcessHR() {
-  Form.getComponent("pnlCloseInfo").setVisible(true);
+  Form.getComponent("pnlAudreport2a").setVisible(true);
   Form.getComponent("ddlAudItem").setEnabled(true);
+}
+
+function setProcessHRClose() {
+  Form.getComponent("pnlAudreport2a").setVisible(true);
+
 }
 
 
@@ -1057,6 +1084,65 @@ function setProcessRoot() {
 
 
 
+
+
+
+
+//依關卡額外
+
+/*
+all 結案關卡：結案說明 + 實際改善日  
+人資經理 選擇稽核項目ddlAudItem   
+Q 草稿判斷  1、還沒送出 task id 是空的？∵沒送出沒關卡？
+表單結案後，是否要開放所有欄位資料給所有關卡看
+其他 營管 權限打開 結案
+*/
+
+{ALL:
+  var formNo = Form.getArtInstance().getMyID();
+  var formName = Form.getArtInstance().getName();
+  Client.addInfoLog("[" + formName + "] openFormUIAction START: " + formNo);
+  #include GlobalFunction;
+
+  //Form.getCurrentTask()可能為null，改用文件狀態判斷
+  var astID = Form.getArtInstance().getArtState().getID();
+
+  //申請人(文件狀態設定：初始化、退回申請人)可異動資料
+  if ("AST06561703746636384".equals(astID) || "AST07701705988180587".equals(astID)) {
+    setFormVisible();
+    //結案+HR關卡關掉
+    setProcessRoot();
+
+    // }else if ("AST06991704445651068".equals(astID)) {
+    //		 //營業專員
+    //		 setProcessApprove();
+  } else if ("AST07021704446619758".equals(astID)) {
+    //人資經理關卡-稽核項目  
+    setFormVisible();
+    setProcessApprove();
+    setProcessHR();
+
+
+  } else if ("AST07751706152173071".equals(astID) || "AST07761706152188576".equals(astID) || "AST07081704448015967".equals(astID)) {
+    //HR食安裝修結案關卡-結案說明  
+    setFormVisible();
+    setProcessApprove();
+    setProcessClose();
+
+    if ("AST07081704448015967".equals(astID)) {
+      setProcessHRClose();
+    }
+
+
+  } else {
+    //其他簽核關卡，readonly
+    setFormVisible();
+    setProcessApprove();
+    //setAudClassLayout();
+  }
+
+  Client.addInfoLog("[" + formName + "] openFormUIAction END: " + astID);
+}
 
 
 
